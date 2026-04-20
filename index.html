@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="SOLE STUDIO — รองเท้าแฟชันหลายแบรนด์ ดีไซน์คัดสรร" />
+    <title>SOLE STUDIO | รองเท้าแฟชันทุกแบรนด์</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+Thai:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">ข้ามไปยังเนื้อหา</a>
+
+    <header class="site-header" id="top">
+      <div class="header-inner">
+        <button type="button" class="icon-btn nav-toggle" aria-label="เปิดเมนู" aria-expanded="false" id="navToggle">
+          <span class="burger" aria-hidden="true"></span>
+        </button>
+
+        <a class="logo" href="#top">SOLE STUDIO</a>
+
+        <nav class="main-nav" aria-label="หลัก">
+          <ul class="nav-list">
+            <li><a href="#featured">ใหม่ &amp; แนะนำ</a></li>
+            <li><a href="#shop" data-filter-gender="men">ผู้ชาย</a></li>
+            <li><a href="#shop" data-filter-gender="women">ผู้หญิง</a></li>
+            <li><a href="#shop" data-filter-gender="kids">เด็ก</a></li>
+            <li><a href="#brands">แบรนด์</a></li>
+            <li><a href="#shop">ลดราคา</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <button type="button" class="icon-btn" id="searchToggle" aria-label="ค้นหา">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <circle cx="11" cy="11" r="7" />
+              <path d="M20 20l-3-3" />
+            </svg>
+          </button>
+          <button type="button" class="icon-btn cart-btn" id="cartToggle" aria-label="ตะกร้า">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M6 6h15l-1.5 9h-12z" />
+              <path d="M6 6L5 3H2" />
+              <circle cx="9" cy="20" r="1.5" />
+              <circle cx="18" cy="20" r="1.5" />
+            </svg>
+            <span class="cart-badge" id="cartBadge">0</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="search-bar" id="searchBar" hidden>
+        <div class="search-bar-inner">
+          <label class="sr-only" for="searchInput">ค้นหารุ่นหรือแบรนด์</label>
+          <input type="search" id="searchInput" placeholder="ค้นหา รุ่น, แบรนด์…" autocomplete="off" />
+          <button type="button" class="btn-text" id="searchClose">ปิด</button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-media">
+          <img
+            src="https://images.unsplash.com/photo-1606107557195-0f29fc4a43b0?auto=format&fit=crop&w=1920&q=80"
+            alt=""
+            width="1920"
+            height="1080"
+            fetchpriority="high"
+          />
+        </div>
+        <div class="hero-content">
+          <p class="hero-eyebrow">ทุกแบรนด์ หนึ่งที่เดียว</p>
+          <h1 id="hero-title">RUN YOUR<br />OWN STYLE</h1>
+          <p class="hero-sub">รองเท้าแฟชันคัดพิเศษ — ดีไซน์ สี และคู่ที่ใช่สำหรับคุณ</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#shop">ช้อปเลย</a>
+            <a class="btn btn-outline" href="#finder">หารองเท้าที่ใช่</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="spotlight" id="brands" aria-labelledby="spotlight-title">
+        <div class="section-head">
+          <h2 id="spotlight-title">แบรนด์เด่น</h2>
+          <p class="section-lead">เลือกดูคอลเลกชันจากแบรนด์ที่คุณชอบ</p>
+        </div>
+        <div class="brand-track" role="list">
+          <!-- filled by JS -->
+        </div>
+      </section>
+
+      <section class="featured" id="featured" aria-labelledby="feat-title">
+        <div class="featured-grid">
+          <article class="featured-card featured-card--wide">
+            <img src="https://images.unsplash.com/photo-1460353581641-37baddab0fa2?auto=format&fit=crop&w=1200&q=80" alt="" loading="lazy" />
+            <div class="featured-card__text">
+              <h2 id="feat-title">สไตล์สตรีท</h2>
+              <p>สนีกเกอร์และรองเท้าลำลองที่จับคู่ได้ทุกลุค</p>
+              <a href="#shop" class="link-arrow" data-filter-cat="lifestyle">ดูสินค้า</a>
+            </div>
+          </article>
+          <article class="featured-card">
+            <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80" alt="" loading="lazy" />
+            <div class="featured-card__text">
+              <h2>ซัมเมอร์ฮิต</h2>
+              <p>สีและวัสดุระบายอากาศ</p>
+              <a href="#shop" class="link-arrow">เลือกเลย</a>
+            </div>
+          </article>
+          <article class="featured-card">
+            <img src="https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=800&q=80" alt="" loading="lazy" />
+            <div class="featured-card__text">
+              <h2>สปอร์ตโปร</h2>
+              <p>พร้อมลุยทุกซ้อม</p>
+              <a href="#shop" class="link-arrow" data-filter-cat="running">ดูรันนิ่ง</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="finder" id="finder" aria-labelledby="finder-title">
+        <div class="finder-inner">
+          <div>
+            <h2 id="finder-title">หารองเท้าที่ใช่ใน 3 คลิก</h2>
+            <p>เลือกกิจกรรม งบ และความชอบ — เราจะไฮไลต์รุ่นที่เหมาะกับคุณ</p>
+          </div>
+          <div class="finder-controls">
+            <label>
+              กิจกรรม
+              <select id="finderActivity">
+                <option value="">ทั้งหมด</option>
+                <option value="running">วิ่ง / เทรนนิ่ง</option>
+                <option value="lifestyle">ลำลอง / สตรีท</option>
+                <option value="basketball">บาสเกตบอล</option>
+              </select>
+            </label>
+            <label>
+              งบโดยประมาณ (บาท)
+              <input type="range" id="finderBudget" min="2000" max="12000" step="500" value="6000" />
+              <span class="finder-budget-label" id="finderBudgetLabel">ไม่เกิน ฿6,000</span>
+            </label>
+            <button type="button" class="btn btn-primary" id="finderApply">แสดงรุ่นที่แนะนำ</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="shop" id="shop" aria-labelledby="shop-title">
+        <div class="shop-layout">
+          <aside class="filters" aria-labelledby="filters-title">
+            <h2 id="filters-title" class="filters-heading">กรองสินค้า</h2>
+            <button type="button" class="filters-close icon-btn" id="filtersClose" aria-label="ปิดตัวกรอง">&times;</button>
+
+            <fieldset class="filter-group">
+              <legend>เพศ</legend>
+              <label><input type="radio" name="gender" value="" checked /> ทั้งหมด</label>
+              <label><input type="radio" name="gender" value="men" /> ผู้ชาย</label>
+              <label><input type="radio" name="gender" value="women" /> ผู้หญิง</label>
+              <label><input type="radio" name="gender" value="kids" /> เด็ก</label>
+            </fieldset>
+
+            <fieldset class="filter-group">
+              <legend>แบรนด์</legend>
+              <div id="brandFilters"></div>
+            </fieldset>
+
+            <fieldset class="filter-group">
+              <legend>หมวด</legend>
+              <label><input type="checkbox" name="category" value="running" /> วิ่ง</label>
+              <label><input type="checkbox" name="category" value="lifestyle" /> ไลฟ์สไตล์</label>
+              <label><input type="checkbox" name="category" value="basketball" /> บาสเกตบอล</label>
+              <label><input type="checkbox" name="category" value="sandals" /> แซนดัล / สไลด์</label>
+            </fieldset>
+
+            <button type="button" class="btn btn-outline btn-block" id="resetFilters">ล้างตัวกรอง</button>
+          </aside>
+
+          <div class="shop-main">
+            <div class="shop-toolbar">
+              <button type="button" class="btn btn-outline mobile-only" id="openFilters">ตัวกรอง</button>
+              <p class="result-count" id="resultCount"></p>
+              <label class="sort-wrap">
+                เรียงตาม
+                <select id="sortSelect">
+                  <option value="featured">แนะนำ</option>
+                  <option value="price-asc">ราคา: ต่ำ → สูง</option>
+                  <option value="price-desc">ราคา: สูง → ต่ำ</option>
+                  <option value="name">ชื่อ A–Z</option>
+                </select>
+              </label>
+            </div>
+            <div class="product-grid" id="productGrid" role="list"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div>
+          <p class="footer-logo">SOLE STUDIO</p>
+          <p class="footer-tag">รองเท้าแฟชันทุกแบรนด์</p>
+        </div>
+        <nav aria-label="ท้ายหน้า">
+          <ul class="footer-links">
+            <li><a href="#shop">ร้านค้า</a></li>
+            <li><a href="#brands">แบรนด์</a></li>
+            <li><a href="#finder">ช่วยหาไซส์/สไตล์</a></li>
+          </ul>
+        </nav>
+      </div>
+      <p class="footer-copy">&copy; <span id="year"></span> SOLE STUDIO</p>
+    </footer>
+
+    <!-- Cart drawer -->
+    <div class="drawer-overlay" id="drawerOverlay" hidden></div>
+    <aside class="cart-drawer" id="cartDrawer" aria-label="ตะกร้าสินค้า" hidden>
+      <div class="cart-drawer__head">
+        <h2>ตะกร้า</h2>
+        <button type="button" class="icon-btn" id="cartClose" aria-label="ปิดตะกร้า">&times;</button>
+      </div>
+      <div class="cart-drawer__body" id="cartList"></div>
+      <div class="cart-drawer__foot">
+        <p class="cart-total">ยอดรวม <strong id="cartTotal">฿0</strong></p>
+        <button type="button" class="btn btn-primary btn-block" id="checkoutBtn">ชำระเงิน (สาธิต)</button>
+      </div>
+    </aside>
+
+    <!-- Quick view modal -->
+    <div class="modal" id="quickView" role="dialog" aria-modal="true" aria-labelledby="qvTitle" hidden>
+      <div class="modal__backdrop" data-close-modal></div>
+      <div class="modal__panel">
+        <button type="button" class="modal__close icon-btn" data-close-modal aria-label="ปิด">&times;</button>
+        <div class="modal__grid" id="quickViewContent"></div>
+      </div>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
